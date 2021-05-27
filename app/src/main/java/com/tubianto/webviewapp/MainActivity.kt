@@ -4,7 +4,6 @@ import android.annotation.SuppressLint
 import android.content.Context
 import android.net.ConnectivityManager
 import android.os.Build
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.KeyEvent
 import android.view.View
@@ -14,6 +13,7 @@ import android.webkit.WebView
 import android.webkit.WebViewClient
 import android.widget.ProgressBar
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
     lateinit var loading: ProgressBar
@@ -46,7 +46,7 @@ class MainActivity : AppCompatActivity() {
     private fun init(){
         url = "https://tubianto.com/"
         loading = findViewById<ProgressBar>(R.id.pb_loading)
-        webView = findViewById<WebView>(R.id.wv_promo)
+        webView = findViewById<WebView>(R.id.wv_page)
     }
 
     private fun setupUI(){
